@@ -1,0 +1,29 @@
+{
+    "name": "dynamodan/msteams-client",
+    "description": "A simple client for posting MessageCard type messages to MS Teams",
+    "keywords": ["msteams"],
+    "license": "GNU GPL 3",
+    "authors": [
+        {
+            "name": "dynamodan",
+            "email": "info@dynamodan.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "~6.0|~5.0|~4.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+
+    },
+    "suggest": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Dynamodan\\MSTeams\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
