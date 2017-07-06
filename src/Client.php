@@ -114,9 +114,10 @@ class Client {
 		'themeColor' => '0072C6', // ... and so forth
 		
 		// Just the basics for now:
-    	'title' => $message->getTitle(),
     	'text' => $message->getText(),
     ];
+    
+    if(!is_null($message->getTitle())) { $payload['title'] = $message->getTitle(); }
 
     return $payload;
   }
